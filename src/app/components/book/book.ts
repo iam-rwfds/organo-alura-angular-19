@@ -3,7 +3,6 @@ import { BookType } from './book.entity';
 
 @Component({
   selector: 'app-book',
-  imports: [],
   templateUrl: './book.html',
   styleUrl: './book.scss',
 })
