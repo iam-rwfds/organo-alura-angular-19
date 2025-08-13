@@ -8,9 +8,9 @@ import { BookType } from './book.entity';
   styleUrl: './book.scss',
 })
 export class Book {
-  public livro = input.required<BookType>();
+  public book = input.required<BookType>();
 
   alternarFavorito() {
-    this.livro().favorito = !this.livro().favorito;
+    this.book().favorito = !this.book().favorito;
   }
 }

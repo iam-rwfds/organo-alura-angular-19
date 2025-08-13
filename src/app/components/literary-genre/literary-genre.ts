@@ -9,5 +9,5 @@ import { books } from '../../mock-books';
   styleUrl: './literary-genre.scss',
 })
 export class LiteraryGenre {
-  livro = books[0];
+  book = books[0];
 }
