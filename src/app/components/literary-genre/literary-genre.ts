@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Book } from '../book/book';
-import { books } from '../../mock-books';
+import { LiteraryGenreType } from '../book/book.entity';
 
 @Component({
   selector: 'app-literary-genre',
@@ -9,5 +9,5 @@ import { books } from '../../mock-books';
   styleUrl: './literary-genre.scss',
 })
 export class LiteraryGenre {
-  book = books[0];
+  genre = input.required<LiteraryGenreType>();
 }
