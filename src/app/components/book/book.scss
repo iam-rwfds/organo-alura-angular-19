@@ -1,0 +1,101 @@
+section {
+  width: 262px;
+  min-height: 382px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 64px;
+  border-top: 24px solid;
+
+  .info-livro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+
+    > * {
+      margin: 8px;
+    }
+  }
+
+  .imagem {
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 8rem;
+    height: 11.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  span {
+    margin-bottom: 4rem;
+  }
+}
+
+.texto-h2 {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  line-height: 26px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.texto-h3 {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: var(--font-weight-normal);
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-secundaria);
+}
+
+.favorito-btn {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.75rem;
+  color: #ff5252;
+  padding: 0;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+}
+
+.romance {
+  border-color: #82cffa;
+}
+
+.misterio {
+  border-color: #a6d157;
+}
+
+.fantasia {
+  border-color: #e06b69;
+}
+
+.ficcao-cientifica {
+  border-color: #db6ebf;
+}
+
+.tecnicos {
+  border-color: #ff8a29;
+}
